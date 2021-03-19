@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleMediaPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Orx-jf-NVF">
+                                <rect key="frame" x="191.5" y="203" width="31" height="30"/>
+                                <state key="normal" title="選曲"/>
+                                <connections>
+                                    <action selector="pickWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eur-fh-6qS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GM-Cg-Llr">
+                                <rect key="frame" x="191.5" y="433" width="31" height="30"/>
+                                <state key="normal" title="再生"/>
+                                <connections>
+                                    <action selector="pushPlayWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j6q-Lr-GJz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyX-EX-JAT">
+                                <rect key="frame" x="191.5" y="663" width="31" height="30"/>
+                                <state key="normal" title="停止"/>
+                                <connections>
+                                    <action selector="pushStopWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JsG-Or-hrz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Orx-jf-NVF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Y8-U2-Ehz"/>
+                            <constraint firstItem="VyX-EX-JAT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FK4-uI-KY1"/>
+                            <constraint firstItem="1GM-Cg-Llr" firstAttribute="top" secondItem="Orx-jf-NVF" secondAttribute="bottom" constant="200" id="XK5-U7-ApT"/>
+                            <constraint firstItem="VyX-EX-JAT" firstAttribute="top" secondItem="1GM-Cg-Llr" secondAttribute="bottom" constant="200" id="gwR-zg-ZXv"/>
+                            <constraint firstItem="1GM-Cg-Llr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xAp-az-vhp"/>
+                            <constraint firstItem="1GM-Cg-Llr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zM1-7x-l0k"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
